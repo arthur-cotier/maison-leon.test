@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maison Léon — Café-restaurant de quartier, Croix-Rousse Lyon</title>
+  <meta name="description" content="Maison Léon, café-restaurant de quartier à la Croix-Rousse à Lyon. Cuisine maison, produits du marché, ardoise qui change chaque semaine, brunch le dimanche." />
+  <meta name="theme-color" content="#c2533a" />
+  <link rel="canonical" href="https://maisonleon.fr/" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Maison Léon — Café-restaurant Croix-Rousse" />
+  <meta property="og:description" content="Manger comme à la maison, mais sans faire la vaisselle." />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Polices : Fraunces (serif optical, caractère artisanal) + Inter (sans neutre) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..600,0..100,0..1;1,9..144,400..600,0..100,0..1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD : Restaurant local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Maison Léon",
+    "description": "Café-restaurant de quartier à la Croix-Rousse, cuisine maison et produits locaux.",
+    "url": "https://maisonleon.fr/",
+    "telephone": "+33 4 78 28 47 12",
+    "servesCuisine": ["Française", "Bistro", "Brunch"],
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 rue d'Austerlitz",
+      "addressLocality": "Lyon",
+      "postalCode": "69004",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "19:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "19:00", "closes": "22:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "15:00" }
+    ],
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <!-- ============= HEADER ============= -->
+  <header class="site-header">
+    <div class="nav">
+      <a href="#" class="logo" aria-label="Retour en haut — Maison Léon">Maison&nbsp;Léon</a>
+
+      <ul class="nav-links">
+        <li><a href="#esprit">L'esprit</a></li>
+        <li><a href="#carte">La carte</a></li>
+        <li><a href="#brunch">Brunch</a></li>
+        <li><a href="#producteurs">Producteurs</a></li>
+        <li><a href="#contact">Infos</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn--primary nav-cta">Réserver</a>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Menu mobile">
+      <a href="#esprit">L'esprit</a>
+      <a href="#carte">La carte</a>
+      <a href="#brunch">Brunch</a>
+      <a href="#producteurs">Producteurs</a>
+      <a href="#contact">Infos</a>
+      <a href="#contact" class="btn btn--primary">Réserver une table</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============= HERO ============= -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Croix-Rousse · Lyon 4ᵉ</span>
+          <h1>
+            Manger comme <em>à la&nbsp;maison</em>,<br>
+            sans faire la vaisselle.
+          </h1>
+          <p class="hero-lead">
+            Café-restaurant de quartier à la Croix-Rousse. Une cuisine du marché,
+            une ardoise qui change toutes les semaines, des producteurs qu'on
+            connaît par leur prénom. Le luxe d'un repas simple, bien fait.
+          </p>
+          <div class="hero-actions">
+            <a href="#carte" class="btn btn--primary">Voir la carte du jour</a>
+            <a href="#contact" class="btn btn--ghost">Réserver une table</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>Mardi → Samedi</strong>12h-14h30 · 19h-22h</div>
+            <div><strong>Brunch dominical</strong>10h - 15h, sur réservation</div>
+            <div><strong>04 78 28 47 12</strong>Métro Croix-Rousse, ligne C</div>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img
+            src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=900&q=80&auto=format&fit=crop"
+            alt="Salle du restaurant Maison Léon : tables en bois, lumière chaude, plantes"
+            loading="eager" />
+          <span class="hero-stamp">Maison<br>depuis<br><em>2022</em></span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============= L'ESPRIT DE LA MAISON ============= -->
+    <section id="esprit" class="section esprit reveal">
+      <div class="container">
+        <div style="max-width: 56ch;">
+          <span class="eyebrow">L'esprit de la maison</span>
+          <h2>Une cuisine du <em>marché</em>, et c'est&nbsp;tout.</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p style="margin-top: 1.5rem; color: var(--ink-soft); font-size: 1.05rem;">
+            Maison Léon, c'est trois envies tenues fermement&nbsp;: cuisiner ce qu'on
+            aime, travailler avec ceux qu'on aime, et le faire dans un quartier qu'on aime.
+            Ni concept, ni storytelling marketing&nbsp;: une table de quartier, point.
+          </p>
+        </div>
+
+        <div class="esprit-grid">
+          <article class="pillar">
+            <h3>Cuisine du marché</h3>
+            <p>L'ardoise change chaque semaine, dictée par ce que nos producteurs ont à nous proposer le mardi matin. Pas de carte fixe, pas de surgelé, pas de promesse qu'on ne tient pas.</p>
+          </article>
+          <article class="pillar">
+            <h3>Le quartier d'abord</h3>
+            <p>On habite la Croix-Rousse, on y bosse, on y mange. La plupart de nos client·es du midi viennent à pied — on les connaît par leur prénom et c'est très bien comme ça.</p>
+          </article>
+          <article class="pillar">
+            <h3>Pas de chichis</h3>
+            <p>Une assiette généreuse, un vin honnête, une lumière douce. Pas de pince à dressage, pas de fumée sous cloche. Le luxe d'un repas simple, bien fait.</p>
+          </article>
+        </div>
+
+        <div class="quote-card">
+          <blockquote>
+            « On a ouvert Maison Léon comme on aurait ouvert la porte à des amis. Une table où l'on mange ce qu'on aime, sans en faire des tonnes&nbsp;— et où l'on revient. »
+            <cite>Léa & Antoine — fondateurs</cite>
+          </blockquote>
+          <div class="quote-portrait">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=440&q=80&auto=format&fit=crop"
+                 alt="Portrait de Léa & Antoine, fondateurs de Maison Léon" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= CARTE DU JOUR ============= -->
+    <section id="carte" class="section menu-section reveal">
+      <div class="container">
+        <div class="menu-header">
+          <div>
+            <span class="eyebrow">La carte du jour</span>
+            <h2>Cette <em>semaine</em> à&nbsp;table</h2>
+            <span class="divider" aria-hidden="true"></span>
+          </div>
+          <aside class="menu-week-note">
+            <strong>Semaine du 4 mai</strong>
+            Carte qui évolue chaque mardi selon les arrivages. Formule midi entrée+plat ou plat+dessert&nbsp;: <strong>22&nbsp;€</strong>.
+          </aside>
+        </div>
+
+        <div class="menu-cols">
+          <!-- Entrées -->
+          <div class="menu-col">
+            <h3>Entrées</h3>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Velouté de potimarron du Beaujolais</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">9&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Huile de noisette torréfiée, croûtons à l'ail noir.</p>
+            </article>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Œuf parfait, crémeux de cresson</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">11&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Lard fumé des Monts du Lyonnais, herbes du jardin de Mathilde.</p>
+            </article>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Lentilles tièdes & betterave rôtie</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">10&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Fromage frais, vinaigrette miel-moutarde, noix concassées.</p>
+            </article>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Tartare de truite des Dombes</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">13&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Pomme verte, crème ciboulette, blinis maison.</p>
+            </article>
+          </div>
+
+          <!-- Plats -->
+          <div class="menu-col">
+            <h3>Plats</h3>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Suprême de poulet fermier</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">19&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Purée de courge musquée, kale braisé, jus court au thym.</p>
+            </article>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Quenelle de brochet maison</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">21&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Sauce Nantua, riz pilaf, gratiné minute.</p>
+            </article>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Filet de cabillaud rôti</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">22&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Lentilles vertes du Puy AOP, salsa verde, citron confit.</p>
+            </article>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Risotto de petit épeautre</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">18&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Champignons des Monts du Lyonnais, parmesan affiné 24 mois. <em>Végétarien.</em></p>
+            </article>
+          </div>
+
+          <!-- Desserts -->
+          <div class="menu-col">
+            <h3>Desserts</h3>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Tarte aux pralines roses</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">8&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Version revisitée maison, crème fouettée légère à la fève tonka.</p>
+            </article>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Crème caramel</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">7&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Sablé breton beurre demi-sel, fleur de sel de Guérande.</p>
+            </article>
+            <article class="dish">
+              <div class="dish-row">
+                <span class="name">Faisselle, miel & granola</span>
+                <span class="dots" aria-hidden="true"></span>
+                <span class="price">8&nbsp;€</span>
+              </div>
+              <p class="dish-desc">Faisselle de la Mère Richard, miel de châtaignier des Monts d'Or, granola maison.</p>
+            </article>
+          </div>
+        </div>
+
+        <p class="menu-foot">
+          Allergènes&nbsp;: nous interroger. Les prix s'entendent service compris.
+          Bouchon de quartier sympathique également au verre — ardoise des vins disponible en salle.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============= BRUNCH ============= -->
+    <section id="brunch" class="section brunch reveal">
+      <div class="container brunch-grid">
+        <figure class="brunch-figure">
+          <img src="https://images.unsplash.com/photo-1533920379810-6bedac961555?w=900&q=80&auto=format&fit=crop"
+               alt="Une table de brunch dressée : viennoiseries, œufs, jus, granola" loading="lazy" />
+        </figure>
+        <div>
+          <span class="eyebrow eyebrow--cream">Tous les dimanches</span>
+          <h2>Le <em>brunch</em> dominical</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p style="margin-top: 1.4rem;">
+            Une formule complète, généreuse, qu'on prend tranquillement de 10h à 15h.
+            Deux services seulement, sur réservation, parce qu'on aime que la salle reste calme
+            et que vous ne soyez pas pressé·es.
+          </p>
+
+          <span class="brunch-price">28&nbsp;€ <span>par personne — enfants 14&nbsp;€</span></span>
+
+          <ul class="brunch-list">
+            <li>Boisson chaude au choix — café d'origine, thé en feuilles, chocolat maison</li>
+            <li>Jus pressé du jour — orange-citron-curcuma ou pomme-betterave-gingembre</li>
+            <li>Planche viennoiserie — croissant, pain au chocolat, brioche feuilletée du boulanger</li>
+            <li>Œufs brouillés <em>ou</em> saumon mariné maison <em>ou</em> avocado toast</li>
+            <li>Faisselle, granola maison, fruits frais de saison, miel des Monts d'Or</li>
+            <li>Mignardise du chef</li>
+          </ul>
+
+          <a href="#contact" class="btn btn--cream">Réserver le brunch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= PRODUCTEURS ============= -->
+    <section id="producteurs" class="section producteurs reveal">
+      <div class="container">
+        <div style="max-width: 60ch;">
+          <span class="eyebrow eyebrow--sage">Nos producteurs</span>
+          <h2>Une carte écrite par <em>les autres</em></h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p style="margin-top: 1.4rem; color: var(--ink-soft); font-size: 1.05rem;">
+            Chaque mardi matin, on fait le tour. On goûte, on discute, on adapte la carte.
+            Voici les six maisons sans qui Maison Léon n'existerait simplement pas.
+          </p>
+        </div>
+
+        <div class="prod-grid">
+          <article class="prod-card">
+            <div class="prod-card-img">
+              <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=600&q=80&auto=format&fit=crop"
+                   alt="Pièce de viande charolaise" loading="lazy" />
+            </div>
+            <div class="prod-card-body">
+              <span class="place">Brindas (69)</span>
+              <h3>Maison Lambert</h3>
+              <p>Boucher charolais depuis trois générations. Bêtes élevées dans les Monts du Lyonnais, rassis sur os 28 jours minimum.</p>
+            </div>
+          </article>
+
+          <article class="prod-card">
+            <div class="prod-card-img">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80&auto=format&fit=crop"
+                   alt="Légumes frais de maraîcher" loading="lazy" />
+            </div>
+            <div class="prod-card-body">
+              <span class="place">Marchampt (69)</span>
+              <h3>Les Jardins de Mathilde</h3>
+              <p>Maraîchage en biodynamie, 32 variétés au fil des saisons. Sa courge musquée est, sans débat, la meilleure du Beaujolais.</p>
+            </div>
+          </article>
+
+          <article class="prod-card">
+            <div class="prod-card-img">
+              <img src="https://images.unsplash.com/photo-1589881133595-a3c085cb731d?w=600&q=80&auto=format&fit=crop"
+                   alt="Plateau de fromages affinés" loading="lazy" />
+            </div>
+            <div class="prod-card-body">
+              <span class="place">Roanne (42)</span>
+              <h3>Mons Fromagers</h3>
+              <p>Affineurs depuis quatre générations. C'est de chez eux que vient le Mont d'Or, le Saint-Marcellin, la fourme de Montbrison qui finissent dans nos assiettes.</p>
+            </div>
+          </article>
+
+          <article class="prod-card">
+            <div class="prod-card-img">
+              <img src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?w=600&q=80&auto=format&fit=crop"
+                   alt="Bouteilles et verres de vin du Beaujolais" loading="lazy" />
+            </div>
+            <div class="prod-card-body">
+              <span class="place">Fleurie (69)</span>
+              <h3>Domaine du Clos d'Estoublon</h3>
+              <p>Vigneron en Beaujolais bio. Du gamay vibrant, de la Roussanne qui surprend. Des vins qu'on aime parce qu'ils nous ressemblent.</p>
+            </div>
+          </article>
+
+          <article class="prod-card">
+            <div class="prod-card-img">
+              <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=600&q=80&auto=format&fit=crop"
+                   alt="Pain au levain coupé en deux" loading="lazy" />
+            </div>
+            <div class="prod-card-body">
+              <span class="place">Croix-Rousse (69)</span>
+              <h3>Pain & Levain</h3>
+              <p>La boulangerie d'à côté, levain naturel, farines bio des Hauts-de-Loire. Notre pain quotidien, leurs viennoiseries pour le brunch.</p>
+            </div>
+          </article>
+
+          <article class="prod-card">
+            <div class="prod-card-img">
+              <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&q=80&auto=format&fit=crop"
+                   alt="Pot de miel doré et cuillère en bois" loading="lazy" />
+            </div>
+            <div class="prod-card-body">
+              <span class="place">Saint-Cyr-au-Mont-d'Or (69)</span>
+              <h3>Rucher des Monts d'Or</h3>
+              <p>Apiculteur familial. Miel de châtaignier, miel de printemps, miel de tilleul. Les ruches sont à 25&nbsp;min de la salle.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= INFOS + RÉSERVATION ============= -->
+    <section id="contact" class="section contact reveal">
+      <div class="container">
+        <div style="max-width: 56ch;">
+          <span class="eyebrow">Infos pratiques & réservation</span>
+          <h2>Venir, <em>nous écrire</em>, réserver.</h2>
+          <span class="divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="infos-block">
+            <article class="info-card">
+              <h3>Où nous trouver</h3>
+              <p>
+                14 rue d'Austerlitz<br>
+                69004 Lyon — Croix-Rousse<br>
+                <span style="color: var(--muted); font-size: 0.92rem;">Métro C — station Croix-Rousse</span>
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Horaires</h3>
+              <p>
+                Mardi → Vendredi&nbsp;: 12h-14h30 · 19h-22h<br>
+                Samedi&nbsp;: 12h-14h30 · 19h-22h30<br>
+                Dimanche&nbsp;: 10h-15h <em>(brunch sur réservation)</em><br>
+                <span style="color: var(--muted);">Fermé le lundi.</span>
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Nous contacter</h3>
+              <p>
+                <a href="tel:+33478284712">04&nbsp;78&nbsp;28&nbsp;47&nbsp;12</a><br>
+                <a href="mailto:bonjour@maisonleon.fr">bonjour@maisonleon.fr</a>
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Privatisation</h3>
+              <p>Anniversaire, séminaire, repas de famille&nbsp;: la salle se privatise jusqu'à 32 couverts. Devis sur demande.</p>
+            </article>
+          </div>
+
+          <form class="reservation-form" id="reservation-form" novalidate>
+            <h3>Demande de réservation</h3>
+            <p class="lead">Pour le service du midi, du soir ou le brunch dominical. On vous confirme par retour sous 24h.</p>
+
+            <div class="field-row cols-2">
+              <div class="field">
+                <label for="firstname">Prénom</label>
+                <input id="firstname" name="firstname" type="text" required autocomplete="given-name" />
+              </div>
+              <div class="field">
+                <label for="lastname">Nom</label>
+                <input id="lastname" name="lastname" type="text" required autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="field-row cols-2">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="phone">Téléphone</label>
+                <input id="phone" name="phone" type="tel" required autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="reservation-date">Date</label>
+                <input id="reservation-date" name="date" type="date" required />
+              </div>
+              <div class="field">
+                <label for="reservation-time">Heure</label>
+                <select id="reservation-time" name="time" required>
+                  <option value="">—</option>
+                  <optgroup label="Midi">
+                    <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option>
+                  </optgroup>
+                  <optgroup label="Soir">
+                    <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option>
+                  </optgroup>
+                  <optgroup label="Brunch (dimanche)">
+                    <option>10:00</option><option>12:30</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="field">
+                <label for="guests">Couverts</label>
+                <select id="guests" name="guests" required>
+                  <option value="">—</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7</option><option>8</option>
+                  <option value="9+">9+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Message — allergies, occasion, demande particulière</label>
+              <textarea id="message" name="message" placeholder="Anniversaire, allergies, table près de la fenêtre…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="justify-self: start;">Envoyer la demande</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p style="font-size: 0.78rem; color: var(--muted); margin: 0;">
+              Démo de portfolio — aucune donnée n'est réellement transmise. En production, on brancherait ce formulaire sur un service léger (Formspree, Resend, API custom).
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="logo">Maison Léon</a>
+          <p style="margin-top: 1rem; font-size: 0.92rem; max-width: 28ch; opacity: 0.85;">
+            Café-restaurant de quartier. Croix-Rousse, Lyon. Cuisine maison, ardoise du marché, brunch le dimanche.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Adresse</h4>
+          <ul>
+            <li>14 rue d'Austerlitz</li>
+            <li>69004 Lyon</li>
+            <li>Métro Croix-Rousse</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+33478284712">04&nbsp;78&nbsp;28&nbsp;47&nbsp;12</a></li>
+            <li><a href="mailto:bonjour@maisonleon.fr">bonjour@maisonleon.fr</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Suivez-nous</h4>
+          <ul>
+            <li><a href="#" rel="noopener">Instagram</a></li>
+            <li><a href="#" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>© <span id="current-year">2026</span> Maison Léon. Tous droits réservés.</p>
+        <p>Site exemple — fictif, à des fins de portfolio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
